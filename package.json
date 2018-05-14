@@ -1,0 +1,21 @@
+{
+  "name": "spoticli",
+  "version": "1.0.0",
+  "description": "listen to spotify from the command line !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Breizoreol (Matthieu Rolland)",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "spotify-node-applescript": "^1.1.1",
+    "spotify-web-api-node": "^3.0.0",
+    "term-img": "^2.1.0",
+    "terminal-kit": "^1.15.1"
+  },
+  "bin": {
+    "spoticly": "index.js"
+  }
+}
