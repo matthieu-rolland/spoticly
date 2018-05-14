@@ -1,21 +1,42 @@
 {
-  "name": "spoticli",
+  "name": "spoticly",
   "version": "1.0.0",
-  "description": "listen to spotify from the command line !",
+  "description": "Browse, control and listen to spotify from the command line",
   "main": "index.js",
+  "repository": "github:breizoreol/spoticly",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Breizoreol (Matthieu Rolland)",
   "license": "ISC",
   "dependencies": {
     "commander": "^2.15.1",
+    "conf": "^1.4.0",
     "spotify-node-applescript": "^1.1.1",
     "spotify-web-api-node": "^3.0.0",
     "term-img": "^2.1.0",
-    "terminal-kit": "^1.15.1"
+    "terminal-kit": "^1.15.1",
+    "update-notifier": "^2.5.0"
   },
   "bin": {
     "spoticly": "index.js"
-  }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "load-json-file": "^5.0.0",
+    "mocha": "^5.1.1",
+    "mock-stdin": "^0.3.1",
+    "write-json-file": "^2.3.0"
+  },
+  "keywords": [
+    "spotify",
+    "music",
+    "player",
+    "spotify-api",
+    "cli",
+    "playlist",
+    "artists",
+    "albums",
+    "compilations"
+  ]
 }

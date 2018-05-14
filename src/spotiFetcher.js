@@ -10,6 +10,19 @@ spotiFetcher.getData = (spotApi, methodName, param, optional = false) => {
   });
 }
 
+exports.getCurrentTrackList = async (spotApi, contextObject) => {
+  var tracks;
+  if (contextObject.type === 'playlist') {
+    tracks = await spotApi['getPlaylistTracks'](contextObject.userId, contextObject.id);
+  } else if (contextObject.type === 'album') {
+    tracks = await spotiFetcher.getData(spotApi, 'getAlbumTracks', contextObject.id);
+  }
+  tracks = tracks.body.items || [];
+  return new Promise(resolve => {
+    resolve(tracks);
+  });
+}
+
 exports.getArtistAlbums = async (spotApi, artistId, all) => {
   var albums = await spotiFetcher.getData(spotApi, 'getArtistAlbums', artistId, {limit: 50, offset: 0})
   albums = albums.body.items || [];
