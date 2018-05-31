@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/breizoreol/spoticly.svg?branch=master)](https://travis-ci.org/breizoreol/spoticly)
-[![NPM](https://nodei.co/npm/spoticly.png)](https://nodei.co/npm/spoticly/)
 
 # SPOTICLY
+
+[![NPM](https://nodei.co/npm/spoticly.png)](https://nodei.co/npm/spoticly/) [![Build Status](https://travis-ci.org/breizoreol/spoticly.svg?branch=master)](https://travis-ci.org/breizoreol/spoticly)
+
 
 Browse, control and listen to spotify from the command line (mac os only for now, windows support might come later)
 
