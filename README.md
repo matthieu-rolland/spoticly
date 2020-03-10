@@ -78,8 +78,8 @@ You can search for a specific track using the "**track**" command, or '**tr**'
 Use '**track-list**' or '**tr**' to display and navigate inside an album or playlist
 
 ```
-    spoticly --track-list
-    spoticly tr
+    spoticly track-list
+    spoticly tl
 ````
 
 
